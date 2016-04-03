@@ -1,0 +1,22 @@
+{
+  "name": "subtitle-finder",
+  "version": "1.0.0",
+  "description": "finding subtitle for films",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "subtitle"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bikrone/subtitle-finder.git"
+  },
+  "author": "Khanh H. Nguyen",
+  "license": "MIT",
+  "dependencies": {
+    "fs-ext": "^0.5.0",
+    "request": "^2.69.0"
+  }
+}
