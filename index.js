@@ -36,7 +36,7 @@ var getSubtitle = function(filename, callback) {
     if (err) return callback(err);
     request(generateUrl('http://api.thesubdb.com/?action=download&hash=' + code + '&language=en'), function(err, res, body) {
       if (err) return callback(err);
-      if (res.statusCode !== 200) callback({error: 'cannot retrieve subtitle'});
+      if (res.statusCode !== 200) return callback({error: 'cannot retrieve subtitle'});
       var pathParse = path.parse(filename);
       var pathname = pathParse.dir + '/'+pathParse.name;
 
