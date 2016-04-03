@@ -59,6 +59,10 @@ var getOptions = function() {
 }
 
 var opts = getOptions();
+if (!opts.target) {
+  console.log('HOW TO USE:\nDownload subtitle of a file: node index.js [path_to_file]\nDownload subtitle of a folder: node index.js [path_to_folder] -d\nor recursively: node index.js [path_to_folder] -d -r');
+  return;
+}
 if (opts.d) {
   var isRecursive = false;
   if (opts.r) isRecursive = true;
